@@ -16,6 +16,10 @@ PHONE_DISPLAY = "+27 (0) 60 985 1907"
 PHONE_TEL = "+27609851907"
 ADDRESS = "17681 Vuyani Street, Bongolethu, 6625"
 MAPS = "https://www.google.com/maps/search/?api=1&query=17681+Vuyani+Street+Bongolethu+6625"
+FOUNDER_NAME = "Bronwin"
+FOUNDER_EMAIL = "bronwinafrica2@gmail.com"
+FOUNDER_PHONE_DISPLAY = "+27 (0) 78 501 8078"
+FOUNDER_PHONE_TEL = "+27785018078"
 FACEBOOK = "https://facebook.com/groups/1527069571787101"
 CONTACT_PERSON = "Mr. Samuel Kasereka Misemengo"
 FORM_ENDPOINT = "https://formsubmit.co/ajax/" + EMAIL
@@ -129,6 +133,7 @@ def footer():
 <li>{icon("map")}<span>{ADDRESS}</span></li>
 <li>{icon("phone")}<a href="tel:{PHONE_TEL}">{PHONE_DISPLAY}</a></li>
 <li>{icon("mail")}<a href="mailto:{EMAIL}">{EMAIL}</a></li>
+<li>{icon("phone")}<a href="tel:{FOUNDER_PHONE_TEL}">{FOUNDER_PHONE_DISPLAY}</a> ({FOUNDER_NAME})</li>
 </ul></div>
     </div>
     <div class="footer-bottom">
@@ -421,6 +426,7 @@ def page_about():
         <dt>NPO number</dt><dd>192-961 NPO</dd>
         <dt>CIPC</dt><dd>2025/628405/08</dd>
         <dt>Contact person</dt><dd>{CONTACT_PERSON}</dd>
+        <dt>Founder</dt><dd>{FOUNDER_NAME}</dd>
       </dl></div>
     </div>
   </div>
@@ -564,6 +570,7 @@ def page_contact():
       <p>Send us a message and we will respond as soon as we can. You can also reach us directly using the details below.</p>
       <ul class="contact-list">
         <li><div class="card__icon">{icon("users")}</div><div><strong>Contact person</strong><span>{CONTACT_PERSON}</span></div></li>
+        <li><div class="card__icon">{icon("users")}</div><div><strong>{FOUNDER_NAME}, Founder</strong><a href="mailto:{FOUNDER_EMAIL}">{FOUNDER_EMAIL}</a><br><a href="tel:{FOUNDER_PHONE_TEL}">{FOUNDER_PHONE_DISPLAY}</a></div></li>
         <li><div class="card__icon">{icon("mail")}</div><div><strong>Email</strong><a href="mailto:{EMAIL}">{EMAIL}</a></div></li>
         <li><div class="card__icon">{icon("phone")}</div><div><strong>Phone / WhatsApp</strong><a href="tel:{PHONE_TEL}">{PHONE_DISPLAY}</a></div></li>
         <li><div class="card__icon">{icon("map")}</div><div><strong>Address</strong><a href="{MAPS}" target="_blank" rel="noopener">{ADDRESS}</a></div></li>
